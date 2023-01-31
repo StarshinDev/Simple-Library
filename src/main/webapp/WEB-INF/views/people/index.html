@@ -5,13 +5,19 @@
     <title>All people</title>
 </head>
 <body>
-    <div th:each="person : ${people}">
-      <a th:href="@{/people/{id} (id = ${person.getPersonId()})}"
-          th:text="${person.getName() + ' / '+ person.getTelephoneNumber()}">user</a>
-    </div><br>
+<h2>Library's visitors</h2>
+<div th:each="person, state : ${people}">
+    <p margin-bottom="1">
+        <a th:href="@{/people/{id} (id = ${person.getPersonId()})}"
+              th:text="${state.count} + ') ' + ${person.getName() + ', '+ person.getTelephoneNumber()}">user</a>
+    </p>
+</div>
 
-    <form method="get" action="/people/new">
-        <input type="submit" value="Add new person">
-    </form>
+<form method="get" action="/people/new">
+    <input type="submit" value="Add new person"><p margin-bottom="1">
+</form>
+<form method="get" action="/">
+    <input type="submit" value="<- To menu">
+</form>
 </body>
 </html>

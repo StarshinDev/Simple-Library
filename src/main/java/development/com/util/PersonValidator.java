@@ -26,9 +26,9 @@ public class PersonValidator implements Validator {
     public void validate(Object target, Errors errors) {
         Person person = (Person) target;
 
-        if(personDAO.checkUniqueName(person.getName()).isPresent())
+        if(personDAO.checkUniqueName(person).isPresent())
             errors.rejectValue("name", "", "A similar name has already been entered");
-        if(personDAO.checkUniqueTelephone(person.getTelephoneNumber()).isPresent())
+        if(personDAO.checkUniqueTelephone(person).isPresent())
             errors.rejectValue("telephoneNumber", "","A similar telephone has already been entered");
     }
 }

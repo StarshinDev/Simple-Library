@@ -5,24 +5,32 @@
     <title>Person</title>
 </head>
 <body>
-    <p th:text="'Persons\'s ID:  ' + ${person.getPersonId()}">value</p>
-    <p th:text="'Persons\'s FIO:  ' + ${person.getName()}">value</p>
-    <p th:text="'Persons\'s age:  ' + ${person.getAge()}">value</p>
-    <p th:text="'Persons\'s telephone :  ' + ${person.getTelephoneNumber()}">value</p>
+<p th:text="'Persons\'s ID:  ' + ${person.getPersonId()}">value</p>
+<p th:text="'Persons\'s FIO:  ' + ${person.getName()}">value</p>
+<p th:text="'Persons\'s age:  ' + ${person.getAge()}">value</p>
+<p th:text="'Persons\'s telephone :  ' + ${person.getTelephoneNumber()}">value</p>
+<td>
+    <span th:unless="${books.isEmpty()}">
+        <hr/>
+        <b th:text="'List of books taken by ' + ${person.name} + ' :'"/><br>
+        <table th:each="book, state : ${books}">
+            <tr th:text="${state.count} + ') Title - ' + ${book.getTitle()} + ' / ' + 'Author - ' + ${book.getAuthor()}">book</tr>
+        </table>
+    </span>
+    <span th:if="${books.isEmpty()}">
+        <b>Посетитель пока не взял ни одной книги.</b>
+    </span>
+</td><p margin-bottom="1">
+<form method="GET" action="/people">
+    <input type="submit" value="<- Return to List"><p margin-bottom="1">
+</form>
 
-    <a th:if="${not books.isEmpty()}">
-        <a th:text="'List of books taken by ' + ${person.name} + ' :'">text</a><br>
-        <div th:each="book, state : ${books}">
-            <a th:text="${state.count} + ') Title - ' + ${book.getTitle()} + ' / ' + 'Author - ' + ${book.getAuthor()}">user</a>
-        </div>
-    </a>
+<form method="GET" th:action="@{/people/{id}/edit (id=${person.personId})}">
+    <input type="submit" value="Update Person ->"><p margin-bottom="1">
+</form>
 
-    <a th:if="${books.isEmpty()}"> No one books !<br></a>
-
-    <br>
-
-    <form method="get" action="/people">
-        <input type="submit" value="<- Return to List">
-    </form>
+<form th:method="DELETE" th:action="@{/people/{id} (id=${person.personId})}">
+    <input type="submit" value="Delete Person">
+</form>
 </body>
 </html>
