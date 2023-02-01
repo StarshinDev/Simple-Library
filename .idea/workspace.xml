@@ -9,28 +9,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ac21c0c2-86a9-4d80-8a91-39d53d6a5ccc" name="Changes" comment="Adding &quot;BookController&quot; and &quot;BookDAO&quot; for entity Book.">
-      <change afterPath="$PROJECT_DIR$/src/main/java/development/com/controllers/BooksController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/books/edit.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/books/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/books/new.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/books/show.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/people/edit.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+    <list default="true" id="ac21c0c2-86a9-4d80-8a91-39d53d6a5ccc" name="Changes" comment="Adding views for entity Book.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/development/com/config/MyDispatcherServletInitializr.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/development/com/config/MyDispatcherServletInitializr.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/development/com/config/SpringConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/development/com/config/SpringConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/development/com/controllers/PeopleController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/development/com/controllers/PeopleController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/development/com/dao/BookDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/development/com/dao/BookDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/development/com/dao/PersonDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/development/com/dao/PersonDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/development/com/models/Book.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/development/com/models/Book.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/development/com/util/PersonValidator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/development/com/util/PersonValidator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/database.properties.origin" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/database.properties.origin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/people/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/people/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/development/com/models/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/development/com/models/Person.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/people/new.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/people/new.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/people/show.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/people/show.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -229,8 +211,25 @@
       <workItem from="1675064082222" duration="12489000" />
       <workItem from="1675088088169" duration="141000" />
       <workItem from="1675088242160" duration="25418000" />
-      <workItem from="1675151112248" duration="12586000" />
+      <workItem from="1675151112248" duration="12873000" />
+      <workItem from="1675186515435" duration="10000" />
+      <workItem from="1675238479411" duration="2208000" />
     </task>
+    <task id="LOCAL-00001" summary="Adding &quot;BookController&quot; and &quot;BookDAO&quot; for entity Book.">
+      <created>1675164974091</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1675164974091</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Adding views for entity Book.">
+      <created>1675165144293</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1675165144293</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -249,7 +248,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Adding &quot;BookController&quot; and &quot;BookDAO&quot; for entity Book." />
-    <option name="LAST_COMMIT_MESSAGE" value="Adding &quot;BookController&quot; and &quot;BookDAO&quot; for entity Book." />
+    <MESSAGE value="Adding views for entity Book." />
+    <option name="LAST_COMMIT_MESSAGE" value="Adding views for entity Book." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

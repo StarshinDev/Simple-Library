@@ -19,7 +19,7 @@
         <br>
 
         <label for="phone">Enter Person's telephone :</label>
-        <input id="phone" type="text" th:field="*{telephoneNumber}"/><br>
+        <input type="tel" id="phone" placeholder="8-***-***-**-**" th:field="*{telephoneNumber}"/><br>
         <div style="color:red" th:if="${#fields.hasErrors()}" th:errors="*{telephoneNumber}">error</div>
         <br>
 
