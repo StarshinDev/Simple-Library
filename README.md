@@ -4,7 +4,7 @@
 - apache Maven;
 - JDBC Template (DBMS - postgreSQL);
 - thymeleaf.
-### Allows you to manipulate data about books and library visitors.
+### Allows you to manipulate data about books and library visitors:
 - Adding new entries;
 - modification of existing ones;
 - removal of irrelevant information;
